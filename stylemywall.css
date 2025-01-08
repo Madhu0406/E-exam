@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #3B3B3B;
+    background: rgba(173, 216, 230, 0.6); /* Subtle transparent blue */
+    animation: fadeIn 1.5s;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: url('mywallimg.avif') no-repeat center center;
+    background-size: cover;
+    color: #F9AA33;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #3B3B3B;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+section h2, section h3 {
+    color: #344955;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4A4A4A;
+}
+
+section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #344955;
+    color: #F9AA33;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #F9AA33;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #D4882A;
+    transform: scale(1.05);
+}
+
+input[type="text"], input[type="file"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #344955;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 73, 85, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1 {
+    animation: slideIn 1s;
+}
+
+section h2, section h3 {
+    animation: slideIn 1.2s;
+}

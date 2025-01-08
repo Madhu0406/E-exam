@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer-Based Test (CBT)</title>
+</head>
+<body>
+    <header>
+        <h1>Computer-Based Test (CBT)</h1>
+        <p>Answer all questions. Time: 20 minutes</p>
+    </header>
+    <main>
+        <form action="submit_quiz.html" method="post">
+            <section>
+                <h2>User Information</h2>
+                <label for="roll-number">Roll Number:</label><br>
+                <input type="text" id="roll-number" name="roll-number" placeholder="Enter your roll number" required><br><br>
+
+                <label for="full-name">Full Name:</label><br>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required><br><br>
+
+                <label for="email">Email ID:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="section">Section:</label><br>
+                <select id="section" name="section" required>
+                    <option value="">Select your section</option>
+                    <option value="CSE-1">CSE-1</option>
+                    <option value="CSE-34">CSE-34</option>
+                </select><br><br>
+            </section>
+
+            <section>
+                <h2>Quiz Questions</h2>
+
+                <p>1. Which of the following subnet masks allows for 510 usable hosts per subnet?</p>
+                <input type="radio" id="/23" name="q1" value="/23" required>
+                <label for="/23">/23</label><br>
+                <input type="radio" id="/24" name="q1" value="/24">
+                <label for="/24">/24</label><br>
+                <input type="radio" id="/25" name="q1" value="/25">
+                <label for="/25">/25</label><br>
+                <input type="radio" id="/26" name="q1" value="/26">
+                <label for="/26">/26</label><br><br>
+
+                <p>2. How many usable IP addresses are there in a /29 and /30 subnets?</p>
+                <input type="radio" id="2-6" name="q2" value="2-6" required>
+                <label for="2-6">2, 6</label><br>
+                <input type="radio" id="6-4" name="q2" value="6-4">
+                <label for="6-4">6, 4</label><br>
+                <input type="radio" id="6-2" name="q2" value="6-2">
+                <label for="6-2">6, 2</label><br>
+                <input type="radio" id="none" name="q2" value="none">
+                <label for="none">None of these</label><br><br>
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

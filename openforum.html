@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openforum</title>
+    <link rel="stylesheet" href="styleof.css">
+</head>
+<body>
+    <header>
+        <h1 align="center">Openforum</h1>
+    </header>
+    <main>
+        <!-- Introduction Section -->
+        <section id="intro">
+            <h2>Welcome to Openforum</h2>
+            <p>Connect with like-minded individuals, discuss topics of interest, and share your knowledge. Our platform brings together learners and experts to engage in meaningful discussions.</p>
+        </section>
+
+        <!-- Recent Questions Section -->
+        <section id="recent-questions">
+            <h2>Recent Discussions</h2>
+            <ul>
+                <li>
+                    <a href="#">What is the best way to learn HTML and CSS?</a>
+                    <span> - Posted by <strong>User123</strong> | 5 Replies</span>
+                </li>
+                <li>
+                    <a href="#">How does JavaScript handle asynchronous operations?</a>
+                    <span> - Posted by <strong>CoderX</strong> | 8 Replies</span>
+                </li>
+                <li>
+                    <a href="#">Recommended tools for debugging in Python?</a>
+                    <span> - Posted by <strong>DevGeek</strong> | 3 Replies</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Post a New Question Section -->
+        <section id="post-question">
+            <h3>Post Your Question</h3>
+            <form action="submit_question.html" method="post">
+                <label for="questionTitle">Title:</label><br>
+                <input type="text" id="questionTitle" name="questionTitle" placeholder="Enter a clear and concise title" required><br><br>
+
+                <label for="tags">Tags (optional):</label><br>
+                <input type="text" id="tags" name="tags" placeholder="e.g., HTML, JavaScript, Web Development"><br><br>
+
+                <label for="questionBody">Question:</label><br>
+                <textarea id="questionBody" name="questionBody" rows="5" placeholder="Describe your question in detail" required></textarea><br><br>
+
+                <button type="submit">Post Question</button>
+            </form>
+        </section>
+
+        <!-- Popular Tags Section -->
+        <section id="popular-tags">
+            <h3>Popular Tags</h3>
+            <div class="tags">
+                <span>HTML</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Web Development</span>
+                <span>CSS</span>
+                <span>Machine Learning</span>
+                <span>Data Science</span>
+            </div>
+        </section>
+
+        <!-- User Profile Section -->
+        <section id="user-profile">
+            <h3>Top Contributors</h3>
+            <div class="profile">
+                <img src="https://via.placeholder.com/50" alt="User Avatar">
+                <p><strong>CodeMaster</strong><br>Answered 45 questions</p>
+            </div>
+            <div class="profile">
+                <img src="https://via.placeholder.com/50" alt="User Avatar">
+                <p><strong>DataGuru</strong><br>Answered 30 questions</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Education Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

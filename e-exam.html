@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>e-Exam</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Welcome to e-Exam</h2>
+            <p>
+                This platform is designed to provide an interactive and engaging exam experience. Learn, test your knowledge, 
+                and track your performance with ease. Let's dive into an educational journey like no other!
+            </p>
+        </section>
+
+        <section id="exam-info">
+            <h3>Exam Instructions</h3>
+            <div>
+                <p>1. Read each question carefully before answering.</p>
+                <p>2. Once you submit your exam, you cannot change your answers.</p>
+                <p>3. Keep an eye on the timer for timely submission.</p>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h3>Demo Exam</h3>
+            <form action="submit_exam.html" method="post">
+                <label for="question1">1. What is 5 + 3?</label><br>
+                <input type="radio" id="q1a1" name="question1" value="6">
+                <label for="q1a1">6</label><br>
+                <input type="radio" id="q1a2" name="question1" value="8">
+                <label for="q1a2">8</label><br>
+                <input type="radio" id="q1a3" name="question1" value="10">
+                <label for="q1a3">10</label><br><br>
+
+                <label for="question2">2. What is the capital of France?</label><br>
+                <input type="radio" id="q2a1" name="question2" value="Paris">
+                <label for="q2a1">Paris</label><br>
+                <input type="radio" id="q2a2" name="question2" value="London">
+                <label for="q2a2">London</label><br>
+                <input type="radio" id="q2a3" name="question2" value="Berlin">
+                <label for="q2a3">Berlin</label><br><br>
+
+                <button type="submit">Submit Exam</button>
+            </form>
+        </section>
+
+
+        <section id="performance-tips">
+            <h3>Tips for Success</h3>
+            <ul>
+                <li>Prepare by reviewing the provided study materials.</li>
+                <li>Stay calm and focused during the exam.</li>
+                <li>Manage your time wisely for each question.</li>
+                <li>Review your answers before submission.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Education Hub | Empowering Learning</p>
+    </footer>
+</body>
+</html>
